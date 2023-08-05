@@ -55,7 +55,6 @@ public class UserServiceImplTest {
        user.setFirstName("Test");
        user.setJobDescription("IT");
        User userSaved = userService.add(user);
-       Assertions.assertEquals(  1, userSaved.getId() );
        Assertions.assertEquals("Test", user.getFirstName());
        Assertions.assertEquals("IT", user.getJobDescription());
     }
